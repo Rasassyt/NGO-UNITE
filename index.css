@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Normal Styles */
+/* Container Styling */
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 50px 0;
+    text-align: center;
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    min-height: 450px; /* Increase this value for more height */
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    position: absolute; /* Change to absolute positioning for overlap */
+    top: 100%; 
+    z-index: 2; /* Place container above .numberofdata */
+    position: absolute;
+    top: 70%; /* Adjust as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 20px;
+    justify-content: center;
+    font-size: medium;
+}
+.containerhead {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px; /* Set gap to 60px */
+}
+
+.containerhead .register-your-ngo {
+    height: 40px;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(0, 128, 47); /* Green background */
+    color: white; /* Text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.containerhead .donate {
+    height: 40px;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 77, 0); /* Red background */
+    color: white; /* Text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effects */
+.containerhead .register-your-ngo:hover {
+    background-color: rgb(6, 82, 32); /* Darker green on hover */
+}
+
+.containerhead .donate:hover {
+    background-color: rgb(139, 60, 0); /* Darker red on hover */
+}
+
+.containerhead .register-your-ngo,
+.containerhead .donate {
+    position: relative; /* Ensure it has a positioning context */
+    z-index: 1; /* Bring it to the front */
+}
+
+.numberofdata {
+    position:sticky;
+    z-index: 2;
+    margin-top: 240px; /* Reduced space from 60px to 30px */
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(43, 73, 59); /* Background overlay */
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+}
+.numberofdata span {
+    font-size: 5rem;
+    color: #e6b800;
+}
+
+.small-box {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: rgba(91, 155, 124, 0.508); /* Background overlay */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: #fff;
+    height: 180px;
+}
+.small-box-img{
+    width: 60%;
+    height: auto;
+}
+.small-box .p{
+    font-size: 1.5rem;
+}
+.upperbody {
+    position: relative;
+    text-align: center;
+}
+
+.hamburger {
+    font-size: 1.7rem; /* Size of the hamburger icon */
+    cursor: pointer; /* Pointer cursor for click action */
+    color: #fff; /* Color of the hamburger icon */
+    margin-left: auto; /* Push it to the right */
+    display: none; /* Hidden by default */
+}
+
+.navbar {
+    background-color: #2E4E3F;
+    padding: 10px 15px;
+    color: #fff;
+    display: flex; /* Flex container */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between logo and nav items */
+    box-shadow: 0 4px 20px rgba(22, 54, 33, 0.473);
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Center logo items vertically */
+    margin-right: 350px; /* Space between logo and nav items */
+}
+
+.navbar ul {
+    display: flex; /* Align nav items horizontally */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Align items vertically */
+    list-style: none;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    margin-left: auto; /* Push nav items to the right */
+}
+
+
+.logo-img {
+    height: 40px; /* Set logo height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.logo h4 {
+    font-size: 1.5rem; /* Logo text size */
+    font-weight: bold; /* Bold text */
+    color: #fff; /* Text color */
+    margin-left: 10px; /* Space between logo image and text */
+}
+
+.nav-buttons {
+    display: flex; /* Flex container for nav items */
+    gap: 20px; /* Space between nav items */
+    align-items: center; /* Center items vertically */
+}
+
+.nav-item a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1rem; /* Link font size */
+    padding: 8px 12px; /* Padding around links */
+    transition: color 0.3s; /* Transition effect for hover */
+}
+
+.nav-item a:hover {
+    color: #FFD966; /* Hover color */
+}
+
+.nav-btn {
+    padding: 8px 16px; /* Button padding */
+    background-color: #FFD966; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1rem; /* Button font size */
+    color: #333; /* Button text color */
+    transition: background-color 0.3s; /* Transition effect for hover */
+}
+
+.nav-btn:hover {
+    background-color: #e6b800; /* Hover color */
+}
+
+/* Full Image Background */
+.heading {
+    position: relative;
+    background-image: url('source-imgs/homebg_enhanced.png'); /* Background image */
+    background-size: cover; /* Cover the whole area */
+    background-position: center; /* Center the background */
+    padding: 8%; /* Padding for heading */
+    color: #fff; /* Text color */
+    font-size: 2rem; /* Font size */
+    overflow: hidden; /* Hide overflow */
+    z-index: 1;
+}
+
+.heading::before {
+    content: ""; /* Add a pseudo element */
+    position: absolute; /* Position absolutely */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    right: 0; /* Align to right */
+    bottom: 0; /* Align to bottom */
+    background-color: rgba(56, 93, 75, 0.508); /* Background overlay */
+    z-index: 0; /* Stack order */
+}
+.heading h1, .heading h2, .heading h3, .heading p {
+    position: relative; /* Relative positioning to allow z-index to take effect */
+    z-index: 2; /* Bring text above the overlay */
+    color: #fff; /* Ensure text color is white */
+    padding: 40px;
+    text-shadow: 2px 2px 5px rgba(42, 73, 57, 0.8);
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+
+    .navbar ul {
+        display: flex; /* Align nav items horizontally */
+        justify-content: flex-end; /* Align items to the right */
+        align-items: center; /* Align items vertically */
+        list-style: none;
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Push nav items to the right */
+        font-size: 5px;
+    }
+
+    .nav-btn {
+        padding: 7px 14px; /* Button padding */
+        background-color: #FFD966; /* Button background color */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor */
+        font-size: 0.9rem; /* Button font size */
+        color: #333; /* Button text color */
+        transition: background-color 0.3s; /* Transition effect for hover */
+    }
+
+    .nav-item a {
+        color: #fff; /* Link color */
+        text-decoration: none; /* Remove underline from links */
+        font-size: 1rem; /* Link font size */
+        padding: 8px 12px; /* Padding around links */
+        transition: color 0.3s; /* Transition effect for hover */
+    }
+    .nav-buttons {
+        display: flex; /* Flex container for nav items */
+        gap: 8px; /* Space between nav items */
+        align-items: center; /* Center items vertically */
+    }
+}
+
+@media (max-width: 768px) {
+    .heading{
+        position: relative;
+    background-image: url('source-imgs/homebg_enhanced.png'); /* Background image */
+    background-size: 50vh; /* Cover the whole area */
+    background-position: center; /* Center the background */
+    padding: 8%; /* Padding for heading */
+    color: #fff; /* Text color */
+    font-size: 1rem; /* Font size */
+    overflow: hidden; /* Hide overflow */
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .navbar {
+        justify-content: space-between; /* Space out logo and hamburger */
+    }
+
+    .nav-buttons {
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 10px; /* Space between items */
+        display: none; /* Hidden by default */
+        width: 100%; /* Full width */
+        position: absolute; /* Absolute position for dropdown */
+        top: 60px; /* Position below navbar */
+        left: 0; /* Align to left */
+        background-color: #2E4E3F; /* Background color */
+        z-index: 10; /* Stack order */
+        transition: max-height 0.3s ease-in-out; /* Smooth transition */
+        max-height: 0; /* Initially closed */
+        overflow: hidden; /* Prevent overflow */
+    }
+
+    .nav-buttons.active {
+        display: flex; /* Show nav items when active */
+        max-height: 300px; /* Adjust based on number of items */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+
+    .nav-item a {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+        padding: 6px 10px; /* Adjust padding */
+    }
+
+    .nav-btn {
+        width: 20%; /* Full width for buttons */
+        padding: 10px; /* Adjust padding */
+        font-size: 1rem; /* Font size */
+    }
+
+    .logo {
+        font-size: -1.5rem;
+        display: flex;
+        align-items: center; /* Center logo items vertically */
+        margin-right: 490px; /* Space between logo and nav items */
+        padding: right 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading{
+        position: relative;
+    background-image: url('source-imgs/homebg_enhanced.png'); /* Background image */
+    background-size: 50vh; /* Cover the whole area */
+    background-position: center; /* Center the background */
+    padding: 8%; /* Padding for heading */
+    color: #fff; /* Text color */
+    font-size: 1rem; /* Font size */
+    overflow: hidden; /* Hide overflow */
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    
+    .logo-img {
+        height: 40px; /* Smaller logo height */
+    }
+    .logo {
+        font-size: 0.1rem;
+        display: flex;
+        align-items: center; /* Center logo items vertically */
+        margin-right: 200px; /* Space between logo and nav items */
+        padding: right 50px;
+    }
+
+    .navbar {
+        padding: 8px 10px; /* Adjust navbar padding */
+    }
+
+    .heading {
+        height: 30vh; /* Set height for heading */
+    }
+}
+
+
+.paragraphs {
+    background: linear-gradient(to bottom, #ffffff, #7ea28d76 , #528d6a6d, #49896276,#3f7f5976,#a6b8a676,white); /* Example gradient from coral to peach */
+}
+.paragraph-inner{
+    padding: 7%;
+}
+.title{
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: 60px;
+    gap: 70px;
+}
+
+.left {
+    flex-direction: row; /* Left div layout */
+}
+
+.right {
+    flex-direction: row; /* Keep the right div in the standard order */
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px; /* Margin between image and text */
+    padding: 30px;
+    position: relative;
+}
+
+.background-box {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    top: 0;
+    left: 60px; /* Adjust the shift */
+    z-index: 2;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .frontpage{
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for the front image */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .img:hover .frontpage:hover {
+    transform: translateY(-10px) rotateY(-5deg); /* Lift and rotate front image on hover */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
+  }
+  .img:hover .background-box{
+    transform: translateX(10px) rotateY(5deg); /* Shift and rotate background on hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+
+.para {
+    flex: 1; /* Allow paragraph to take available space */
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #3c3b3b;
+    margin: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-content: center;
+}
+
+@media (max-width: 600px) {
+    .left, .right {
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: flex-start;
+    }
+    
+    .img {
+        margin: 0 0 10px 0; /* Adjust margin for stacked layout */
+    }
+}
+
+
+/* Main container */
+.contactbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+    background: linear-gradient(to bottom,rgb(255, 255, 255), rgba(28, 64, 56, 0.21)), 
+                url("source-imgs/handstogether.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-title h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: rgb(20, 55, 40);
+    margin-top: -50px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.horizontal-line{
+    font-weight: bolder;
+    color:#e6b800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form container */
+.formfill {
+    background: #23232377;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.373);
+    max-width: 400px;
+    width: 80%;
+    box-shadow: 2px 10px 30px rgba(0, 0, 0, 0.2); /* Shadow for the front image */
+
+}
+
+/* Form title */
+.formfill h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 25px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+/* Input fields */
+.formfill input[type="text"],
+.formfill input[type="email"],
+.formfill input[type="phone"],
+.formfill textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f8f8f8;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Focus effect for input fields */
+.formfill input[type="text"]:focus,
+.formfill input[type="email"]:focus,
+.formfill input[type="phone"]:focus,
+.formfill textarea:focus {
+    border-color: #194632;
+    box-shadow: 0px 0px 10px rgba(15, 47, 35, 0.3);
+    background: #fff;
+    outline: none;
+    border:solid 1px #333;
+}
+
+/* Placeholder styling */
+.formfill input::placeholder,
+.formfill textarea::placeholder {
+    color: #434242;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Textarea styling */
+.formfill textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Button styling */
+.formfill button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #d5d575;
+    background-color: #1b4b39;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Added transform transition */
+}
+
+/* Button hover effect */
+.formfill button[type="submit"]:hover {
+    background-color: #102d1e;
+}
+
+/* Button click effect */
+.formfill button[type="submit"]:active {
+    transform: scale(0.95); /* Slightly shrink button */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset; /* Add inset shadow for pressed effect */
+}
+
+
+/* Form shadow hover effect */
+.formfill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+}
