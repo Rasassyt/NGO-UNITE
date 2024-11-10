@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior:smooth;
+}
+
+.top{
+    background-image: url('');
+    background: linear-gradient(rgba(30, 101, 79, 0.252));
+}

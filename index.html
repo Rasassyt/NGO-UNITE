@@ -8,7 +8,7 @@
 </head>
 <body>
     <!--navbar here-->
-    <nav class="navbar">
+    <nav class="navbar" id="Home">
         <ul>
             <div class="logo">
                 <div><img class="logo-img" src="source-imgs\logo.png" alt="Logo"></div>         
@@ -17,10 +17,10 @@
             <div class="hamburger">&#9776;</div> <!-- Hamburger icon -->
 
             <div class="nav-buttons">
-                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href="#Home">Home</a></li>
                 <li class="nav-item"><a href="#About">About</a></li>
-                <li class="nav-item"><a href="">Events</a></li>
-                <li class="nav-item"><a href="">NGOs</a></li>
+                <li class="nav-item"><a href="Events.html">Events</a></li>
+                <li class="nav-item"><a href="NGO.html">NGOs</a></li>
                 <li class="nav-item"><a href="#contact">Contact</a></li>
                 <button class="nav-btn">Log In</button>
                 <button class="nav-btn">Sign In</button>
@@ -83,12 +83,14 @@
             <div class="para">
                 <div class="title"> <h3>Empower Connections</h3></div>
                 <div>NGO Unite connects NGOs with a broader audience, allowing them to effectively share their missions and impact stories. This visibility promotes awareness, fostering a society more attuned to diverse social issues.</div>
+                <button type="button" class="findngobtn">Find NGOs</button>
             </div>
         </div>
         <div class="right">
             <div class="para">
                 <div class="title"> <h3>Support Volunteering</h3></div>
                 <div>By offering accessible, well-organized volunteering opportunities, NGO Unite helps individuals engage with causes they care about, empowering them to contribute their skills and time toward meaningful change.</div>
+                <button type="button" class="volunteerbtn">Volunteer</button>
             </div>      
         <div class="img">
             <div class="background-box"></div>
@@ -102,6 +104,7 @@
             <div class="para">
                 <div class="title"> <h3>Streamline Donations</h3></div>
                 <div>The platform ensures a secure and straightforward donation process, making it easy for individuals to financially support trusted NGOs, fostering ongoing support for essential community work.</div>
+                <button type="button" class="donatebtn">Donate</button>
             </div>      
         </div>
     </div>
@@ -127,24 +130,26 @@
     <!--end of contact box here-->
 
     <!--footer box here-->
-    <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
-        <div>
-            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
-            <p>Contact us: <a href="mailto:info@yourcompany.com" style="color: #fff;">info@yourcompany.com</a></p>
+    <footer class="footer" style="background-color: #272626; color: #fff; padding: 30px; text-align: center;">
+        <div class="namelogo">
+            <img class="footerlogo" src="source-imgs\logo.png">
+            <p>NGO-UNITE</p>
+            <p>Contact us: <a href="ngo_unite@gmail.com" style="color: #fff;">ngo_unite@gmail.com</a></p>
         </div>
-        <div>
-            <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 15px;">
+        <div class="support">
+            <ul style="list-style: none; padding: 30px;text-align: left;">
                 <li><a href="#" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
                 <li><a href="#" style="color: #fff; text-decoration: none;">Terms of Service</a></li>
                 <li><a href="#" style="color: #fff; text-decoration: none;">Support</a></li>
             </ul>
         </div>
-        <div>
-            <p>Follow us on:
-                <a href="#" style="color: #fff; text-decoration: none;">Facebook</a> |
-                <a href="#" style="color: #fff; text-decoration: none;">Twitter</a> |
-                <a href="#" style="color: #fff; text-decoration: none;">Instagram</a>
-            </p>
+        <div class="links">
+            <ul style="list-style: none; padding:30;text-align: left;">
+                <h4>Follow us on:</h4>
+                <li><a href="#" style="color: #fff; text-decoration: none;"><img src=""> Instagram</a></li>
+                <li><a href="#" style="color: #fff; text-decoration: none;"><img src=""> Twitter</a></li>
+                <li><a href="#" style="color: #fff; text-decoration: none;"><img src=""> Facebook</a></li>
+            </ul>
         </div>
     </footer>   
     <!--end of contact box here-->
